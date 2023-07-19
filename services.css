@@ -1,0 +1,58 @@
+body
+{
+background: linear-gradient(#00ffff, #ff0000);
+border:5px solid black;
+text-align:center;
+margin-left:auto;
+margin-right:auto;
+padding:5px;
+border-style:double;
+border-width:5px;
+border-color:white;
+color:white;
+font-style:Bold;
+}
+h1
+{
+text-align:center;
+color:red;
+padding:6px;
+}
+h2
+{
+text-align:center;
+color:black;
+
+  programContainer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  program {
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    padding: 20px;
+    flex: 1;
+    margin-right: 10px;
+  }
+
+  programName {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  workoutList ul {
+    padding-left: 0;
+    list-style-type: none;
+  }
+
+  sworkoutList li {
+    margin-bottom: 5px;
+  }
+
+
+
+
+
+

@@ -1,0 +1,277 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    width: 75px;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: width .75s ease;
+}
+.search-box:hover{
+    width: 400px;
+}
+@media (max-width:768px) {
+    .search-box:hover{
+        width: 320px;
+    }
+}
+
+.search-box input[type="text"] {
+    flex-grow: 2;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    width: 0;
+    overflow: hidden;
+    transition: all .75s ease ;
+}
+.search-box:hover input[type="text"]{
+    width: 400px;
+    padding-inline: 1.5rem;
+}
+  
+.search-box button[type="submit"] {
+    width: 75px;
+    height: 100%;
+    background-color: #ff0000;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+  
+.search-box button[type="submit"]:hover {
+    background-color: #800080;
+}
+  
+.search-box i {
+    color: #000000;
+    font-size: 1.5rem;
+}body
+{
+background-image:url("https://t4.ftcdn.net/jpg/03/17/72/47/360_F_317724775_qHtWjnT8YbRdFNIuq5PWsSYypRhOmalS.jpg");
+background-repeat:no-repeat;
+background-size:cover;
+border:5px solid black;
+text-align:center;
+margin-left:auto;
+margin-right:auto;
+padding:5px;
+border-style:double;
+border-width:5px;
+border-color:white;
+color:yellow;
+font-style:Bold;
+}
+background-color:yellow;
+background-position:center;
+font-family:sans-sarif;
+box-sizing:boarder-box;
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  display: inline-block;
+  position: relative;
+}
+
+ul li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+  background: black;
+}
+
+/* Style the dropdown menus */
+ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #f0f0f0;
+  padding: 0;
+}
+
+ul li:hover > ul {
+  display: inherit;
+}
+
+ul ul li {
+  width: 200px;
+  float: none;
+  display: list-item;
+  position: relative;
+}
+
+ul ul ul li {
+  position: relative;
+  top: -60px;
+  left: 200px;
+}
+
+/* Style the nested dropdown menus */
+ul li:hover > ul > li {
+  background: #ccc;
+  border-bottom: 1px solid #fff;
+  position: relative;
+}
+
+ul li:hover > ul > li:last-child {
+  border-bottom: none;
+}
+
+ul ul li:hover > ul {
+  display: inherit;
+}
+
+ul ul ul {
+  display: none;
+  position: absolute;
+  left: 100%;
+  top: 0;
+}
+
+ul ul li:hover > ul {
+  display: inherit;
+}
+
+/* Style the hover effect on menu items */
+ul li a:hover {
+  background: #555;
+  color: #fff;
+}
+
+ul ul li a:hover {
+  background: #777;
+  color: #fff;
+}
+
+ul ul ul li a:hover {
+  background: #999;
+  color: #fff;
+}
+h1
+{
+
+text-align:center;
+color:red;
+padding:6px;
+}
+h2
+{
+text-align:center;
+color:orange;
+}
+footer,
+h3
+{background-color:pink;
+margin-left:auto;
+margin-right:auto;
+padding:5px;
+border-style:double;
+border-width:5px;
+border-color:blue;
+text-align:center;
+color:black;
+text-align:center;
+}
+table
+{
+width:100%;
+background-color:blue;
+text-align:center;
+padding:20px;
+}
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.btn-group{
+    height: 400px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 3rem;
+}
+
+.btn {
+    color: white;
+    padding: .75rem 2.5rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.btn-beginner{
+    background-color: #808000;
+}
+.btn-beginner:hover {
+    background-color: #ff00ff;
+}
+  
+.btn-intermediate {
+    background: linear-gradient(to right, #FF416C, #FF4B2B);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+  
+.btn-intermediate:hover {
+    transform: scale(1.1);
+}
+
+.btn-masterful {
+    background-color: #00008b;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+}
+  
+.btn-masterful .icon {
+    position: absolute;
+    top: 50%;
+    left: 8px;
+    transform: translateY(-50%);
+    font-size: 24px;
+}
+.btn-masterful .btn-txt{
+    padding-left: .5rem;
+}
+.btn-masterful:hover {
+    background-color: #0000ff;
+}
+  
+.btn-masterful:hover .icon {
+    animation: rotate 2s linear infinite;
+}
+  
+@keyframes rotate {
+    from {transform: translateY(-50%) rotate(0deg);}
+    to {transform: translateY(-50%) rotate(360deg);}
+}
+

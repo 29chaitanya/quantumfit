@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BMI Calculator</title>
+  <style>
+    body {
+background: linear-gradient(#00ffff, #ff0000);
+      font-family: Arial, sans-serif;
+      background-repeat: no-repeat;
+    }
+    
+    h1 {
+background-color:red;
+      text-align: center;
+    }
+    
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+    
+    }
+    .invisible{
+      color: transparent;
+    }
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+    
+    input[type="number"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      box-sizing: border-box;
+    }
+    
+    button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+    
+    #result {
+      margin-top: 20px;
+      font-weight: bold;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>BMI Calculator</h1>
+    <label for="weight">Weight (kg):</label>
+    <input type="number" id="weight" placeholder="Enter your weight" required>
+    <label for="height">Height (cm):</label>
+    <input type="number" id="height" placeholder="Enter your height" required>
+    <button onclick="calculateBMI()">Calculate BMI</button>
+    <div id="result"></div>
+    <div class="invisible">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quibusdam error molestiae ratione nulla rem consequuntur, recusandae sint dolor at inventore quae voluptatem perferendis deserunt ea sunt consequatur quod magni!
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur iure corrupti culpa fuga qui, sapiente explicabo quaerat? Nostrum, esse ex saepe obcaecati recusandae nam, itaque quod libero voluptatum beatae est.
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil ab nostrum ipsam enim iure aspernatur fugiat ipsa, aut laudantium nobis, corporis quis, illo eligendi autem fugit commodi officiis sed earum?
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio doloremque sit consequuntur facere, fuga temporibus, cum eveniet, a unde velit ipsa accusamus obcaecati totam voluptatibus tempore officia voluptatem deleniti. Enim!
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo cumque nesciunt minus eos deleniti ipsam praesentium impedit, earum, unde neque molestias. Laboriosam minima sequi ad voluptate distinctio labore aut possimus.
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque omnis, aliquid eligendi voluptatem ipsum ipsa optio architecto provident aperiam? A minus qui iusto odit dolores suscipit commodi non laborum debitis.
+
+    </div>
+<img url=""></img>
+  </div>
+  
+  <script>
+    function calculateBMI() {
+      var weight = document.getElementById("weight").value;
+      var height = document.getElementById("height").value;
+      
+      if (weight > 0 && height > 0) {
+        var bmi = weight / ((height / 100) ** 2);
+        document.getElementById("result").innerText = "Your BMI is: " + bmi.toFixed(2);
+      } else {
+        document.getElementById("result").innerText = "Please enter valid values for weight and height.";
+      }
+    }
+  </script>
+</body>
+</html>
